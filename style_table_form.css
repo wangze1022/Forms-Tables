@@ -1,0 +1,85 @@
+main.gridArea {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+    grid-gap: 10px;
+}
+
+article img {
+    display: block;
+    margin: auto;
+    opacity: 0.8;
+    padding-top: 2px;
+    transition: 0.5s;
+}
+article img:hover {
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+article table {
+    margin: auto;
+}
+
+tfoot td {
+    text-align: center;
+}
+
+article caption {
+    font-weight: bold;
+}
+
+article {
+    background-color: #ffffff;
+    border-radius: 25px;
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+
+fieldset {
+    background-color: #d4e8fd;
+    border-color: #03a9f4;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+fieldset span {
+    color: red;
+}
+
+div.formRow {
+    display: flex;
+    flex-flow:row wrap;
+    margin: 5px;
+}
+
+/*  As label have different width, it let the form disordered and not clear,
+    So I have made the label width fixed for name, email, phone, topic, and subject.
+    And it came out more like the sample page screenshot.
+*/
+label[for=name], label[for=email], label[for=phone] {
+    width: 75px;
+}
+
+label[for=topic], label[for=subject] {
+    width: 125px;
+}
+
+
+
+input#name, input#email, select {
+    width: 250px;
+}
+
+input#phone {
+    width: 150px;
+}
+
+textarea {
+    width: 95%;
+    max-width: 450px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+label.blockLabel {
+    display: block;
+}

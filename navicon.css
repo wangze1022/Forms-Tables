@@ -1,0 +1,43 @@
+a#navicon {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    a#navicon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    a#navicon:hover+ul, nav ul:hover {
+        display:block;
+        float: none;
+    }
+
+    section {
+        background: none;
+        padding: 0px;
+        height: auto;
+    }
+
+    h2 {
+        text-shadow: none;
+        color: black;
+        padding: 0;
+    }
+
+    #layout {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "section"
+            "main"
+            "footer";
+    }
+}

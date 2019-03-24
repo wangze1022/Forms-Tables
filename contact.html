@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="urt-8">
+      <title>Contact Us | Wonderful Bali</title>
+      <link href="base.css" rel="stylesheet" type="text/css" />
+      <link href="style1.css" rel="stylesheet" type="text/css" />
+      <link href="layout_style.css" rel="stylesheet" type="text/css" />
+      <link href="style_table_form.css" rel="stylesheet" type="text/css" />
+      <link href="navicon.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <div id="layout">
+      <header>
+      	<h1>Wonderful Bali</h1>
+      	<h4>The ultimate travel guide for your Bali vacation.</h4>
+      </header>
+      <nav>
+            <a id="navicon" href="#"><img src="navicon.png" width="32px" /></a>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="products.html">Products</a></li>
+         </ul>
+      </nav>
+      <section>
+      	<h2>Contact Us</h2>
+      </section>
+      <main>
+         <form id="contactForm" action="mailto: ze.2.wang@ucdenver.edu" name="contactForm">
+            <p>* indicates a required field</p>
+            <fieldset id="contactFileds">
+               <legend>Contact Information</legend>
+                  <div class="formRow">
+                     <label for="name">Name<span>*</span></label>
+                     <input id="name" name="name" type="text" required>
+                  </div>
+
+                  <div class="formRow">
+                     <label for="email">Email<span>*</span></label>
+                     <input id="email" name="email" type="email" required>
+                  </div>
+
+                  <div class="formRow">
+                     <label for="phone">Phone<span>*</span></label>
+                     <input id="phone" name="phone" type="tel">
+                  </div>  
+            </fieldset>
+
+            <fieldset id="request">
+               <legend >Information Request</legend>
+                  <div class="formRow">
+                     <label for="topic">Request Topic<span>*</span></label>
+                     <Select required>
+                        <option>Select a topic</option>>
+                        <option value="Tour">Tour Details</option>
+                        <option value="Purchase">Purchase Question</option>
+                        <option value="Reservation">Reservation</option>
+                        <option value="Other">Other Information</option>
+                     </Select>
+                  </div>
+                  <div class="formRow">
+                     <label for="subject">Subject<span>*</span></label>
+                     <input id="subject" name="subject" type="text" required>
+                  </div>
+                     <label class="blockLabel" for="question">Ask Us Any Quesion<span>*</span></label>
+                     <textarea id="quesiton" name="question" rows="5" cols="55" required></textarea>
+            </fieldset>
+            <!--  The assignment guide refers that insert the [mailingList fieldset] After the [selection list label] but still within the [request fieldset]
+                  But it looks wired when doing the [mailingList fieldset] inside the [request fieldset]
+                  And the screenshot also shows that the [mailingList fieldset] is separate from [request fieldset]
+                  So I made the [mailingList fieldset] entirely outsided after the [request fieldset]
+            -->
+            <fieldset id="mailingList">
+                  <legend>Do you want to be on our mailing list?</legend>
+                  <label for="mYes">Yes</label>
+                  <input type="radio" name="mList" id="mYes" value="Yes">
+                  <label for="mNo">No</label>
+                  <input type="radio" name="mList" id="mNo" value="No">
+            </fieldset>
+            <button type="submit" form="contactForm">Submit</button>
+            <button type="reset" form="contactForm">Cancel</button>
+         </form>
+      </main>
+      <footer>
+         Copyright 2019 by Ze Wang
+      </footer>
+      </div>
+   </body>
+</html>
+
